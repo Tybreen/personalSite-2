@@ -1,0 +1,120 @@
+body {
+  background-color: rgb(180, 180, 180);
+}
+
+header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+header > h1 {
+  color: white;
+  font-size: 50px;
+  margin: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 20px;
+}
+
+nav * {
+  color: rgb(180, 180, 180);
+  font-size: 20px;
+  margin: 20px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav > p {
+  font-size: 30px;
+  color: white;
+  cursor: default;
+  padding-bottom: 2px;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+}
+
+nav > a {
+  transition: font-size .25s;
+}
+
+nav > a:hover {
+  font-size: 30px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.intros > section {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+}
+
+img {
+  width: 500px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px black;
+  transition: width .75s;
+}
+
+img:hover {
+  width: 90vw;
+}
+
+img.intro {
+  width: min(33vw, 425px);
+  margin-left: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-family: cursive;
+}
+
+main.interests > section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-top-style: solid;
+}
+
+main.interests > h2 {
+  margin-bottom: 2px;
+}
+
+main.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+main.portfolio > h1 {
+  margin-bottom: 50px;
+}
+
+main.portfolio > section > section > img {
+  width: 500px;
+  margin-left: 20px;
+}
+
+.project > section {
+  display: flex;
+}
+
+.project {
+  margin-bottom: 50px;
+  border-top-style: solid;
+}
