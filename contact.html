@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Document</title>
+    <title>Tyler Breen's site - Contact me</title>
 
     <link rel="stylesheet" href="./styles.css"/>
   </head>
@@ -18,8 +18,44 @@
       </nav>
     </Header>
 
-    <main>
+    <main class="contact">
 
+      <h1>Contact me!</h1>
+
+      <form action="./success.html">
+
+        <section>
+          <label class="star" for="name">*</label>
+          <label for="name">Enter your full name here:</label>
+        </section>
+        <input type="text" id="name" placeholder="Full Name" required/>
+
+        <section>
+          <label class="star" for="email">*</label>
+          <label for="email">Enter your email address here:</label>
+        </section>
+        <input type="email" id="email" placeholder="Email" required/>
+
+        <section>
+          <label class="star" for="message">*</label>
+          <label for="message"> Enter your message here:</label>
+        </section>
+        <textarea id="message" placeholder="Message" required></textarea>
+        
+        <input id="submit" type="submit" value="Send"/>
+
+      </form>
+
+      <!--* The code here for testing purposes. My form appears to not be sending any information to the browser. I sent in a helpdesk ticket, and Divya tried to help me, but we could not figure it out so she said it was all right that it's not working. So the code below is for testing. I copied it from W3 schools and it does work correctly. -->
+      <!-- <form>
+        <section>
+          <label for="fname">First name:</label><br>
+        </section>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form> -->
 
     </main>
 

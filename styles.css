@@ -2,6 +2,10 @@ body {
   background-color: rgb(180, 180, 180);
 }
 
+p {
+  font-size: 18px;
+}
+
 header {
   background-color: black;
   display: flex;
@@ -27,7 +31,8 @@ nav {
 nav * {
   color: rgb(180, 180, 180);
   font-size: 20px;
-  margin: 20px 10px;
+  margin: 10px 5px;
+  padding: 10px 5px;
   text-decoration: none;
   text-align: center;
 }
@@ -53,12 +58,6 @@ nav > a:hover {
 .intro {
   display: flex;
   justify-content: space-evenly;
-}
-
-.intros > section {
-  display: flex;
-  justify-content: right;
-  flex-direction: column;
 }
 
 img {
@@ -105,11 +104,17 @@ main.interests > section {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  border-top-style: solid;
+  
 }
 
 main.interests > h2 {
   margin-bottom: 2px;
+  border-top-style: solid;
+  padding-top: 20px;
+}
+
+main > h1 {
+  margin-bottom: 50px;
 }
 
 main.portfolio {
@@ -128,4 +133,64 @@ main.portfolio > h1 {
 .project {
   margin-bottom: 50px;
   border-top-style: solid;
+}
+
+main.contact > h1 {
+  border-bottom-style: solid;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+main.contact > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main.contact > form > input, textarea {
+  margin-top: 2px;
+  margin-bottom: 30px;
+}
+
+main.contact > form > textarea {
+  width: 40vw;
+  height: 10vw;
+}
+
+main.contact > form > section > label {
+  font-size: 20px;
+}
+
+#name {
+  width: 200px;
+}
+
+#email {
+  width: 300px;
+}
+
+#submit {
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+}
+
+.star {
+  color: red;
+}
+
+#thanks {
+  text-align: center;
+  position: relative;
+  top: 20vh;
+}
+
+
+/** For mobile */
+
+@media screen and (max-width: 800px) {
+  
+  body {
+    background-color: black;
+  }
 }
