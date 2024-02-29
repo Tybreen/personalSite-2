@@ -64,7 +64,7 @@ img {
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px black;
-  transition: all .75s;
+  transition: all 5.75s;
 }
 
 img.intro {
@@ -231,7 +231,7 @@ main.contact > form > section > label {
   img.intro:hover {
     width: 90vw;
     object-position: 0px 0px;
-    height: auto;
+    height: 156vw;
   }
 
   section.project > section {
